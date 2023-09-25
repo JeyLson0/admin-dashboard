@@ -6,75 +6,118 @@
     <title>Admin Dashboard</title>
     <script src="./asset/script.js"></script>
     <link rel="stylesheet" href="./asset/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header-container">
         <div class="search-container">
-            <div class="icon">icon</div>
-            <div class="search-box">search-field</div>
-            <div class="icon">icon</div>
-            <div class="user-icon">user-icon</div>
-            <div class="user-name">user-name</div>
+            <div class="search-box flex">
+                <label class="flex" for="search-bar"><img src="./asset/icon-img/magnify.svg" alt="magnify-icon" class='icon'></label>
+                <input type="search" id="search-bar" name="search-bar">
+            </div>
+            <div class="upper-right-container flex">
+                <img class='icon' src="./asset/icon-img/newspaper-variant-outline.svg"  alt="notif">
+                <img class='icon' src="./asset/icon-img/bell-outline.svg"  alt="alerts">
+                <div class="user-icon-container flex">
+                    <img id="upper-right-user-icon" src="./asset/user-img/JohnSmith.svg" alt="john-smith">
+                </div>
+                <p class="user_name">John Smith</p>
+            </div>
+   
         </div>
-        <div class="nav-bar">
-            <div class="user-icon">user-icon</div>
-            <div class="user-name">Greetings, user</div>
-            <div class="news">news-button</div>
-            <div class="upload">upload-button</div>
-            <div class="share">share-button</div>
+        <div class="data-bar flex">
+            <div class="data-box">user-icon</div>
+            <div class="data-box">Greetings, user</div>
+            <div class="data-box">news-button</div>
+            <div class="data-box">upload-button</div>
         </div>
     </div>
-    <div class="dashboard-container">
-        <div class="logo-container">
-            <div class="logo">logo</div>
-            <div class="title">title</div>
+
+
+    <div class="dashboard-container flex">
+        <div class="dashboard-button flex column">
+            <img class="icon" src="./asset/icon-img/menu.svg" alt="menu-icon">
         </div>
-        <div class="dashboard-nav-container">
-            <div class="home-container">
-                <div class="home-icon">icon</div>
+        <div class="user-tag-container flex column">
+            <div class="user-img">
+                <img id="upper-left-user-icon" src="./asset/user-img/JohnSmith.svg" alt="john-smith">
+            </div>
+            <div class="tag-name">John Smith</div>
+        </div>
+        <div class="dashboard-nav-container flex column">
+            <div class="home-container flex">
+                <img class="icon" src="./asset/icon-img/home.svg" alt="home-icon">
                 <div class="home-bottom">home-bottom</div>
             </div>
-            <div class="profile-container">
-                <div class="profile-icon">icon</div>
-                <div class="profile-bottom">profile-bottom</div>
-            </div>
-            <div class="messages-container">
-                <div class="messages-icon">icon</div>
+            <div class="message-container flex">
+                <img class="icon" src="./asset/icon-img/message.svg" alt="home-icon">
                 <div class="messages-bottom">messages-bottom</div>
             </div>
-            <div class="history-container">
-                <div class="history-icon">icon</div>
+            <div class="history-container flex">
+                <img class="icon" src="./asset/icon-img/history.svg" alt="home-icon">
                 <div class="history-bottom">history-bottom</div>
             </div>
-            <div class="task-container">
-                <div class="task-icon">icon</div>
+            <div class="task-container flex">
+                <img class="icon" src="./asset/icon-img/calendar-check.svg" alt="home-icon">
                 <div class="task-bottom">task-bottom</div>
             </div>
-            <div class="community-container">
-                <div class="community-icon">icon</div>
+            <div class="community-container flex">
+                <img class="icon" src="./asset/icon-img/account-group.svg" alt="home-icon">
                 <div class="community-bottom">community-bottom</div>
             </div>
         </div>
-        <div class="setting-privacy-container">
-            <div class="setting-container">
-                <div class="setting-icon">icon</div>
+        <div class="setting-privacy-container flex column">
+            <div class="setting-container flex">
+                <img class="icon" src="./asset/icon-img/cog.svg" alt="setting-icon">
                 <div class="setting-bottom">setting-bottom</div>
             </div>
-            <div class="support-container">
-                <div class="support-icon">icon</div>
+            <div class="support-container flex">
+                <img class="icon" src="./asset/icon-img/help.svg" alt="support-icon">
                 <div class="support-bottom">support-bottom</div>
             </div>
-            <div class="privacy-container">
-                <div class="privacy-icon">icon</div>
+            <div class="privacy-container flex">
+                <img class="icon" src="./asset/icon-img/shield-account.svg" alt="privacy-icon">
                 <div class="privacy-bottom">privacy-bottom</div>
             </div>
         </div>
+        <div class="logout flex">
+            <img class="icon" src="./asset/icon-img//logout.svg" alt="logout-icon">
+            <div class="logout-btn">Log-out</div>
+        </div>
     </div>
+
+
     <div class="main-container">
-        main
+        <div class="content-container">
+            <h3 class="content-header">Projects</h3>
+            <div class="project-container">
+                <div class="content">content-1</div>
+                <div class="content">content-2</div>
+                <div class="content">content-3</div>
+                <div class="content">content-4</div>
+                <div class="content">content-5</div>
+                <div class="content">content-6</div>
+            </div>
+        </div>
         <div class="sidebar-container">
-            <div class="announcement-container">announcement</div>
-            <div class="trending-container">trending</div>
+            <div class="announcement-container">
+                <h3>announcement</h3>
+                <div class="sidebar-content-container">
+                    <div class="sidebar-content">content-1</div>
+                    <div class="sidebar-content">content-2</div>
+                    <div class="sidebar-content">content-3</div>
+                </div>
+            </div>
+            <div class="network-container">
+                <h3>trending</h3>
+                <div class="sidebar-content-container">
+                    <div class="sidebar-content">content-1</div>
+                    <div class="sidebar-content">content-2</div>
+                    <div class="sidebar-content">content-3</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
