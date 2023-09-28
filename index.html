@@ -13,31 +13,40 @@
     <div class="header-container">
         <div class="search-container">
             <div class="search-box flex">
-                <label class="flex" for="search-bar"><img src="./asset/icon-img/magnify.svg" alt="magnify-icon" class='icon'></label>
+                <label class="flex" for="search-bar"><img class="icon" src="./asset/icon-img/magnify.svg" alt="magnify-icon"></label>
                 <input type="search" id="search-bar" name="search-bar">
             </div>
             <div class="upper-right-container flex">
                 <img class='icon' src="./asset/icon-img/newspaper-variant-outline.svg"  alt="notif">
                 <img class='icon' src="./asset/icon-img/bell-outline.svg"  alt="alerts">
-                <div class="user-icon-container flex">
-                    <img id="upper-right-user-icon" src="./asset/user-img/JohnSmith.svg" alt="john-smith">
-                </div>
-                <p class="user_name">John Smith</p>
+                <img class="user-icon-img" id="upper-right-user-icon" src="./asset/user-img/JohnSmith.svg" alt="john-smith">
+                <p class="user_name">@jSmith</p>
             </div>
-   
         </div>
-        <div class="data-bar flex">
-            <div class="data-box">user-icon</div>
-            <div class="data-box">Greetings, user</div>
-            <div class="data-box">news-button</div>
-            <div class="data-box">upload-button</div>
+        <div class="data-row-container flex">
+            <div class="data-box flex column">
+                <div class="data-title">Revenue</div>
+                <div class="data">$2510</div>
+            </div>
+            <div class="data-box flex column">
+                <div class="data-title">Earnings</div>
+                <div class="data">$1234</div>
+            </div>
+            <div class="data-box flex column">
+                <div class="data-title">Likes</div>
+                <div class="data">956</div>
+            </div>
+            <div class="data-box flex column">
+                <div class="data-title">Shares</div>
+                <div class="data">2340</div>
+            </div>
         </div>
     </div>
 
 
     <div class="dashboard-container flex">
-        <div class="dashboard-button flex column">
-            <img class="icon" src="./asset/icon-img/menu.svg" alt="menu-icon">
+        <div class="dashboard-menu flex column">
+            <img class="dash-icon" src="./asset/icon-img/menu.svg" alt="menu-icon">
         </div>
         <div class="user-tag-container flex column">
             <div class="user-img">
@@ -46,44 +55,44 @@
             <div class="tag-name">John Smith</div>
         </div>
         <div class="dashboard-nav-container flex column">
-            <div class="home-container flex">
-                <img class="icon" src="./asset/icon-img/home.svg" alt="home-icon">
-                <div class="home-bottom">home-bottom</div>
+            <div class="dash-icon-container flex">
+                <img class="dash-icon" src="./asset/icon-img/home.svg" alt="home-icon">
+                <div class="dash-text">Home</div>
             </div>
-            <div class="message-container flex">
-                <img class="icon" src="./asset/icon-img/message.svg" alt="home-icon">
-                <div class="messages-bottom">messages-bottom</div>
+            <div class="dash-icon-container flex">
+                <img class="dash-icon" src="./asset/icon-img/message.svg" alt="home-icon">
+                <div class="dash-text">Message</div>
             </div>
-            <div class="history-container flex">
-                <img class="icon" src="./asset/icon-img/history.svg" alt="home-icon">
-                <div class="history-bottom">history-bottom</div>
+            <div class="dash-icon-container flex">
+                <img class="dash-icon" src="./asset/icon-img/history.svg" alt="home-icon">
+                <div class="dash-text">History</div>
             </div>
-            <div class="task-container flex">
-                <img class="icon" src="./asset/icon-img/calendar-check.svg" alt="home-icon">
-                <div class="task-bottom">task-bottom</div>
+            <div class="dash-icon-container flex">
+                <img class="dash-icon" src="./asset/icon-img/calendar-check.svg" alt="home-icon">
+                <div class="dash-text">Tasks</div>
             </div>
-            <div class="community-container flex">
-                <img class="icon" src="./asset/icon-img/account-group.svg" alt="home-icon">
-                <div class="community-bottom">community-bottom</div>
+            <div class="dash-icon-container flex">
+                <img class="dash-icon" src="./asset/icon-img/account-group.svg" alt="home-icon">
+                <div class="dash-text">Group</div>
             </div>
         </div>
         <div class="setting-privacy-container flex column">
-            <div class="setting-container flex">
-                <img class="icon" src="./asset/icon-img/cog.svg" alt="setting-icon">
-                <div class="setting-bottom">setting-bottom</div>
+            <div class="dash-icon-container flex">
+                <img class="dash-icon" src="./asset/icon-img/cog.svg" alt="setting-icon">
+                <div class="dash-text">Settings</div>
             </div>
-            <div class="support-container flex">
-                <img class="icon" src="./asset/icon-img/help.svg" alt="support-icon">
-                <div class="support-bottom">support-bottom</div>
+            <div class="dash-icon-container flex">
+                <img class="dash-icon" src="./asset/icon-img/help.svg" alt="support-icon">
+                <div class="dash-text">Help</div>
             </div>
-            <div class="privacy-container flex">
-                <img class="icon" src="./asset/icon-img/shield-account.svg" alt="privacy-icon">
-                <div class="privacy-bottom">privacy-bottom</div>
+            <div class="dash-icon-container flex">
+                <img class="dash-icon" src="./asset/icon-img/shield-account.svg" alt="privacy-icon">
+                <div class="dash-text">Security & Privacy</div>
             </div>
         </div>
-        <div class="logout flex">
-            <img class="icon" src="./asset/icon-img//logout.svg" alt="logout-icon">
-            <div class="logout-btn">Log-out</div>
+        <div class="dash-icon-container flex">
+            <img class="dash-icon" src="./asset/icon-img//logout.svg" alt="logout-icon">
+            <div class="dash-text">Log-out</div>
         </div>
     </div>
 
@@ -92,29 +101,128 @@
         <div class="content-container">
             <h3 class="content-header">Projects</h3>
             <div class="project-container">
-                <div class="content">content-1</div>
-                <div class="content">content-2</div>
-                <div class="content">content-3</div>
-                <div class="content">content-4</div>
-                <div class="content">content-5</div>
-                <div class="content">content-6</div>
+                <div class="content flex column">
+                    <div class="content-title">Project Title</div>
+                    <div class="content-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus animi blanditiis perferendis, sit aspernatur labore quibusdam possimus! Excepturi, nisi eos.
+                    </div>
+                    <div class="content-icons-container flex">
+                        <div class="flex seen">
+                            <img class="main-content-icons" src="./asset/icon-img/eye-outline.svg" alt="">
+                            <div>620</div>
+                        </div>
+                        <div class="flex likes">
+                            <img class="main-content-icons" src="./asset/icon-img/thumb-up-outline.svg" alt="">
+                            <div>350</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content flex column">
+                    <div class="content-title">Project Title</div>
+                    <div class="content-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus animi blanditiis perferendis, sit aspernatur labore quibusdam possimus! Excepturi, nisi eos.
+                    </div>
+                    <div class="content-icons-container flex">
+                        <div class="flex seen">
+                            <img class="main-content-icons" src="./asset/icon-img/eye-outline.svg" alt="">
+                            <div>620</div>
+                        </div>
+                        <div class="flex likes">
+                            <img class="main-content-icons" src="./asset/icon-img/thumb-up-outline.svg" alt="">
+                            <div>350</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content flex column">
+                    <div class="content-title">Project Title</div>
+                    <div class="content-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus animi blanditiis perferendis, sit aspernatur labore quibusdam possimus! Excepturi, nisi eos.
+                    </div>
+                    <div class="content-icons-container flex">
+                        <div class="flex seen">
+                            <img class="main-content-icons" src="./asset/icon-img/eye-outline.svg" alt="">
+                            <div>620</div>
+                        </div>
+                        <div class="flex likes">
+                            <img class="main-content-icons" src="./asset/icon-img/thumb-up-outline.svg" alt="">
+                            <div>350</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content flex column">
+                    <div class="content-title">Project Title</div>
+                    <div class="content-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus animi blanditiis perferendis, sit aspernatur labore quibusdam possimus! Excepturi, nisi eos.
+                    </div>
+                    <div class="content-icons-container flex">
+                        <div class="flex seen">
+                            <img class="main-content-icons" src="./asset/icon-img/eye-outline.svg" alt="">
+                            <div>620</div>
+                        </div>
+                        <div class="flex likes">
+                            <img class="main-content-icons" src="./asset/icon-img/thumb-up-outline.svg" alt="">
+                            <div>350</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content flex column">
+                    <div class="content-title">Project Title</div>
+                    <div class="content-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus animi blanditiis perferendis, sit aspernatur labore quibusdam possimus! Excepturi, nisi eos.
+                    </div>
+                    <div class="content-icons-container flex">
+                        <div class="flex seen">
+                            <img class="main-content-icons" src="./asset/icon-img/eye-outline.svg" alt="">
+                            <div>620</div>
+                        </div>
+                        <div class="flex likes">
+                            <img class="main-content-icons" src="./asset/icon-img/thumb-up-outline.svg" alt="">
+                            <div>350</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content flex column">
+                    <div class="content-title">Project Title</div>
+                    <div class="content-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus animi blanditiis perferendis, sit aspernatur labore quibusdam possimus! Excepturi, nisi eos.
+                    </div>
+                    <div class="content-icons-container flex">
+                        <div class="flex seen">
+                            <img class="main-content-icons" src="./asset/icon-img/eye-outline.svg" alt="">
+                            <div>620</div>
+                        </div>
+                        <div class="flex likes">
+                            <img class="main-content-icons" src="./asset/icon-img/thumb-up-outline.svg" alt="">
+                            <div>350</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="sidebar-container">
             <div class="announcement-container">
-                <h3>announcement</h3>
+                <h3>Announcement</h3>
                 <div class="sidebar-content-container">
-                    <div class="sidebar-content">content-1</div>
-                    <div class="sidebar-content">content-2</div>
-                    <div class="sidebar-content">content-3</div>
+                    <div class="sidebar-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ipsa.</div>
+                    <div class="sidebar-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ipsa.</div>
+                    <div class="sidebar-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ipsa.</div>
                 </div>
             </div>
             <div class="network-container">
-                <h3>trending</h3>
+                <h3>Network</h3>
                 <div class="sidebar-content-container">
-                    <div class="sidebar-content">content-1</div>
-                    <div class="sidebar-content">content-2</div>
-                    <div class="sidebar-content">content-3</div>
+                    <div class="sidebar-content flex">
+                        <img class="user-icon-img" id="upper-right-user-icon" src="./asset/user-img/user-3.svg" alt="john-smith">
+                        <p class="user_name">@penguinn</p>
+                    </div>
+                    <div class="sidebar-content flex">
+                        <img class="user-icon-img" id="upper-right-user-icon" src="./asset/user-img/user-1.svg" alt="john-smith">
+                        <p class="user_name">@amandaG</p>
+                    </div>
+                    <div class="sidebar-content flex">
+                        <img class="user-icon-img" id="upper-right-user-icon" src="./asset/user-img/user-2.svg" alt="john-smith">
+                        <p class="user_name">@Richard10</p>
+                    </div>
                 </div>
             </div>
         </div>
